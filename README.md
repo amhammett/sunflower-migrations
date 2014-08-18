@@ -6,19 +6,31 @@ migration tasks for the fictional company, SuncropFlowers
 migrate-micro-site-files.yml
 --------------------
 
-migrate a microservices. the term microservices is an ambiguous term but in this context
+migrate a micro-services. the term micro-services is an ambiguous term but in this context
 is used to describe a self contained service that runs within or apart of a separate 
 application. 
 
 ### how to run?
 
+```bash
+    go-migrate-micro-site-files.sh <server> <git-repo> <path>
+```
+
+where
+
+| attribute | description                                     | example                             |
+| --------- | ----------------------------------------------- | ----------------------------------- |
+| server    | the server to deploy the micro-services         | amee.local                          |
+| git-repo  | source git repo, in format of ssh:// or http:// | https://github.com/foo/bar.git      |
+| path      | the path to deploy the micro-services           | /var/www/example.site/path/to/micro | 
+| --------- | ----------------------------------------------- | ----------------------------------- |
+
 ### how does it work?
 
 1. git clone repo
-2. backup target (optional)
-3. copy to target
-4. clear cache
-5. test (add random string value in step 1 or 2, check for string value)
+2. copy to target
+3. clear cache
+4. test (add random string value in step 1 or 2, check for string value)
 
 
 enable-site-maintenance.yml
