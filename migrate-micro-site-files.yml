@@ -1,6 +1,10 @@
 ---
  - hosts: all
 
+   vars:
+    - git_repo: https://github.com/example/example.git
+    - ms_path: /var/example.com/path/to/micro-services
+
    roles:
     - git-clone-repo
     - deploy-micro-services
