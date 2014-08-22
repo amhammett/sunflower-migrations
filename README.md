@@ -27,10 +27,11 @@ where
 
 ### how does it work?
 
-1. git clone repo
-2. copy to target
-3. clear cache
-4. test (add random string value in step 1 or 2, check for string value)
+1. git-clone-repo
+2. deploy-micro-services
+3. clear-cache
+4. verify-micro-services-deployment
+  - (add random string value in step 1 or 2, check for string value)
 
 
 enable-site-maintenance.yml
