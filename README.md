@@ -47,7 +47,7 @@ the action of changing the state will be done via sql.
 
 ### how does it work?
 
-1. git clone repo
-2. execute sql
-3. clear cache
-4. test
+1. git-clone-repo
+2. change-site-maintenance-state
+3. clear-cache
+4. verify-site-maintenance
