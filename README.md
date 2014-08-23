@@ -34,16 +34,20 @@ where
   - (add random string value in step 1 or 2, check for string value)
 
 
-enable-site-maintenance.yml
+update-site-maintenance.yml
 ----------------------------
 
-we don't always have our site maintenance page available. enable via release that does 
+we don't always have our site maintenance page available. update status via release that does 
 not require an entire site migration.
 
 ideally this would just use the above playbook but enable/disable is done via the database.
 the action of changing the state will be done via sql.
 
 ### how to run?
+
+```bash
+    go-update-site-maintenance.sh <server> <enable|disable> <git-repo> <file>
+```
 
 ### how does it work?
 
